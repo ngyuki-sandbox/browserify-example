@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Example</title>
+</head>
+<body>
+<script>
+window.onerror = function(messageOrEvent, source, lineno, colno, error) {
+    console.log(messageOrEvent + " ... " + source + " (" + lineno + ")");
+}
+</script>
+<script src="dist/bundle.js"></script>
+<script>
+    console.log("index.html");
+    console.log(App.default)
+</script>
+</body>
+</html>
